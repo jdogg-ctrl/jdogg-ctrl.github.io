@@ -38,10 +38,9 @@
         
         // example: 
         createCollectable(type.steve, 200, 170, 6, 0.7);
-        createCollectable(type.kennedi, 170, 200, 8, 9);
-        createCollectable(type.grace, 234, 135, 7, 10);
-        createCollectable(type.kennedi, 155, 230, 6, 10);
-        createCollectable(type.max, 250, 180, 9, 14);
+        createCollectable(type.kennedi, 550, 170, 6, 0.9);
+        createCollectable(type.db, 150, 200, 6, 0.9);
+        
         
         
         
