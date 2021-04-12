@@ -19,8 +19,37 @@ var level01 = function (window) {
                 { "type": "sawblade", "x": 400, "y": groundY },
                 { "type": "sawblade", "x": 600, "y": groundY },
                 { "type": "sawblade", "x": 900, "y": groundY },
+                { "type": "sawblade", "x": 400, "y": groundY },
+                { "type": "enemy", "x": 600, "y": groundY },
+                { "type": "award", "x": 900, "y": groundY },
             ]
         };
+        
+        /*for(var i = 0 ; i < levelData.gameItems.length ; i++){
+                var obj = levelData.gameItems[i];
+                var objX = obj.x;
+                var objY = obj.y;
+                var objType = obj.type;
+                if(obj.type === "sawblade"){
+                    createSawBlade(objX, objY);
+                }
+                else if(obj.type === "enemy"){
+                    createEnemy(objX, objY);
+                }
+                else(obj,type === "award"){
+                    createAward(objX, objY);
+                };
+        
+        }
+        */
+
+       
+
+        createSawBlade(600, groundY - 100);
+        createSawBlade(950, groundY - 100);
+        createSawBlade(1350, groundY - 100);
+        
+    
         window.levelData = levelData;
         // set this to true or false depending on if you want to see hitzones
         game.setDebugMode(true);
@@ -29,11 +58,30 @@ var level01 = function (window) {
         // BEGIN EDITING YOUR CODE HERE
 
         
+
+        function createSawBlade(x, y){
+        var hitZoneSize = 25;
+        var damageFromObstacle = 10;
+        var sawBladeHitZone = game.createObstacle(hitZoneSize, damageFromObstacle);
+        sawBladeHitZone.x = x;
+        sawBladeHitZone.y = y;
+        game.addGameItem(sawBladeHitZone);
+
+        var obstacleImage = draw.bitmap('img/sawblade.png');
+        sawBladeHitZone.addChild(obstacleImage);
         
+        obstacleImage.x = -25;
+        obstacleImage.y = -25;
+        }
+
+        createSawBlade(600, groundY - 100);
+        createSawBlade(950, groundY - 100);
+        createSawBlade(1350, groundY - 100);
         
         // DO NOT EDIT CODE BELOW HERE
     }
-};
+}
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
