@@ -93,7 +93,7 @@ var background = function (window) {
             
             tree.x = tree.x + 1;
 
-            if(tree.x < -200){
+            if(tree.x < 200){
                 tree.x = canvasWidth;
             }
 

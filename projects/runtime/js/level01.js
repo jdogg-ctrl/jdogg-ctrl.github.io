@@ -45,9 +45,7 @@ var level01 = function (window) {
 
        
 
-        createSawBlade(600, groundY - 100);
-        createSawBlade(950, groundY - 100);
-        createSawBlade(1350, groundY - 100);
+       
         
     
         window.levelData = levelData;
@@ -74,10 +72,17 @@ var level01 = function (window) {
         obstacleImage.y = -25;
         }
 
-        createSawBlade(600, groundY - 100);
-        createSawBlade(950, groundY - 100);
-        createSawBlade(1350, groundY - 100);
+        createSawBlade(600, groundY - 101); //1st sawblade
+        createSawBlade(950, groundY - 101); //2nd
+        createSawBlade(1350, groundY - 101); //3rd
+        createSawBlade(2050, groundY - 101); //4th
         
+    
+        game.addGameItem(enemy);
+
+        createEnemy(600, groundY);
+           
+           
         // DO NOT EDIT CODE BELOW HERE
     }
 }
