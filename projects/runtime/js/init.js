@@ -81,27 +81,7 @@ var init = function (window) {
     opspark.runLevelInGame(game);
 
 };
- function createEnemy(x,y){
-        var enemy = game.createGameItem('enemy',25);
-        var redSquare = draw.rect(50,50,'red');
-            redSquare.x = -25;
-            redSquare.y = -25;
-            enemy.addChild(redSquare);
-            enemy.x = 400;
-            enemy.y = groundY-50;
-            enemy.velocityX = -1;
-            enemy.rotationalVelocity = 10;
-            enemy.onPlayerCollision = function() {
-            console.log('The enemy has hit Halle');
-            game.changeIntegrity(-10);
-            enemy.fadeOut();
-            };
-            enemy.onProjectileCollision = function(){
-                console.log('Hallie has hit the enemy');
-                game.increaseScore(10);
-                enemy.shrink();
-            };
-     }
+
 
 // DON'T REMOVE THIS CODE //////////////////////////////////////////////////////
 if((typeof process !== 'undefined') &&
