@@ -1,0 +1,117 @@
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+
+body {
+    background-color: darkgreen;
+  }
+
+#title{
+  color: white;
+  background-color: rgba(0, 128, 11, 0);
+  border-radius: 20px;
+  width: 100px;
+  margin: auto;
+  text-align: center;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+  
+@keyframes rainbow{
+  0%{
+    color: red;
+  } 
+  50%{
+    color: yellow;
+  } 
+  75%{
+    color: blue;
+  }
+  100%{
+    color: purple;
+  }
+}
+  #board {
+    width: 800px;
+    height: 440px;
+    border: 1px solid white;
+    background-color: black;
+    position: relative;
+    margin: auto;
+    margin-top: 25px;
+    animation-name: brainbow;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+  }
+
+  @keyframes brainbow{
+    0%{
+      background-color: purple;
+    }
+    50% {
+      background-color: blue;
+    }
+    75%{
+      background-color: yellowgreen;
+    }
+    100%{
+      background-color: red;
+    }
+  }
+  
+  #paddle1 {
+    background-color: teal;
+    width: 20px;
+    height: 80px;
+    position: absolute;
+     left: 100px;  
+    top: 100px;  
+    border-radius: 25px;
+  }
+
+  #paddle2 {
+    background-color: navajowhite;
+    width: 20px;
+    height: 80px;
+    position: relative;
+     left: 150px;  
+    top: 140px;  
+    border-radius: 25px;
+  }
+
+  #ball{
+     
+      background-color: whitesmoke;
+      width: 20px;
+      height: 20px;
+      position: absolute;
+       left: 155px;  
+      top: 170px;  
+      border-radius: 10px;
+    
+  }
+  #score1{
+    color: white;
+    position: absolute;
+    left: 500px;  
+    top: 20px; 
+    font-family: Orbitron;
+  }
+  #score2{
+    color: white;
+    position: absolute;
+     left: 155px;  
+    top: 20px;  
+    font-family: Orbitron;
+  }
+
+  #restart{
+    background-color: green;
+    width: 70px;
+  }
+
+  #button{
+    width: 10px;
+    padding-top: 15px;
+    margin: auto;
+  }
+  
