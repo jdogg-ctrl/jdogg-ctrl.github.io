@@ -1,0 +1,81 @@
+
+body {
+  background-color: darkgreen;
+}
+
+#title{
+  font-size: 28px;
+  font-weight: bold;
+  text-align: center;
+  width: 150px;
+  margin: 0 auto;
+  border-radius: 50px;
+  animation-name: rainbow;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes rainbow{
+  0%{
+    color: red;
+  } 
+  50%{
+    color: yellow;
+  } 
+  75%{
+    color: blue;
+  }
+  100%{
+    color: purple;
+  }
+}
+#board {
+  width: 440px;
+  height: 440px;
+  position: relative;
+  margin: auto;
+  top: 25px;
+  background-color: black;
+}
+
+#snakeHead {
+  background-color: rgb(10, 26, 26);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+.snake { 
+  background-color: teal;
+  width: 20px;
+  height: 20px;
+  position: absolute;
+}
+
+#apple{
+  background-color: red;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+  position: absolute;
+  left: 50px;
+  top: 100px;
+}
+
+#score{
+  color: white;
+  background-color: black;
+  width: 100px;
+  text-align: center;
+  margin: 0 auto;
+}
+
+#restart{
+  width: 70px;
+  background-color: yellowgreen;
+}
+#button{ 
+  margin:  auto;
+  padding-top: 35px;
+  width: 10px;
+}

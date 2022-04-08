@@ -21,6 +21,7 @@ function runProgram(){
       'w': 87,
       's': 83
     }; 
+    
     function GameItem(id, positionX, positionY, speedX, speedY){
       var Item={
         id: id,
